@@ -17,7 +17,7 @@ model=torch.load(save_path)
 model.eval()  # 把模型转为test模式
 
 # 读取要预测的图片
-img = Image.open("./airplane.jpg").convert('RGB')  # 读取图像
+img = Image.open("./cat.jpg").convert('RGB')  # 读取图像
 
 trans = transforms.Compose([transforms.Resize((32, 32)),
                             transforms.ToTensor(),
